@@ -11,3 +11,9 @@ This is used to connect to, and recieve messages from the SimSig interface gatew
 In order to use this you will need the [STOMP libary for Python](https://pypi.python.org/pypi/stomp.py)
 
 This is the basis of the Interface Gateway that is used elsewhere in the project.
+
+#Basic Gateway Input Connection
+
+This is used to connect to, and send messages to a SimSig server.  This sets up the connection, by sending a connect message to the server, then returns the socket connection, and a message advising if the message was succesfull or not.
+
+This is the basis of the connection used elsewhere in the project.
