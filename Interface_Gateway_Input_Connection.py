@@ -14,8 +14,6 @@ def connect(ipAddress, port, clientName, simName, simVersion, coreCodeVersion):
 	BUFFER_SIZE = 1024
 	connectionMessage = "iA" + clientName + "C" + simVersion + "/" + coreCodeVersion + "/" + simName + "|"
 
-	print(connectionMessage)
-
 	#Open up the connection
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	s.connect((TCP_IP, TCP_PORT))
