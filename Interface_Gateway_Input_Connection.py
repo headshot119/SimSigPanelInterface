@@ -20,7 +20,6 @@ def connect(ipAddress, port, clientName, simName, simVersion, coreCodeVersion):
 	s.send(connectionMessage)
 
 	#Create a variable to hold our connection state message
-
 	messageOnServerConnect = "Connection Failed - Host did not accept"
 
 	for x in range(0,3):
