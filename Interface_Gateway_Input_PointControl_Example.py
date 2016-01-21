@@ -5,9 +5,9 @@ import Interface_Gateway_Input_Connection
 import RPi.GPIO as GPIO
 
 def main():
-        GPIO.setmode(GPIO.BCM)
-        GPIO.setup(5, GPIO.IN, pull_up_down=GPIO.PUD_UP) #Call point normal
-        GPIO.setup(6, GPIO.IN, pull_up_down=GPIO.PUD_UP) #Call point Reverse
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(5, GPIO.IN, pull_up_down=GPIO.PUD_UP) #Call point normal
+    GPIO.setup(6, GPIO.IN, pull_up_down=GPIO.PUD_UP) #Call point Reverse
 
 	s, onConnectMessage = Interface_Gateway_Input_Connection.connect('127.0.0.1', 50505, 'PIPI', 'anytown', '0.0.3', '4.5.8.0')
 
